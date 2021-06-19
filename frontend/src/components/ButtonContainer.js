@@ -5,7 +5,7 @@ export default function ButtonContainer() {
 
     return (
       <div className="center  padding 10px">
-        <h1>React Todos</h1>
+        <h1>My Todo list</h1>
 
         <div className="flex flex-row padding 10px">
           <button onChange="" id="year">2019</button>
