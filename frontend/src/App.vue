@@ -17,11 +17,16 @@ export default {
   components: { TaskGrid, NewTask },
   data() {
     return {
-      tasks: [
-        {name: '1 Lava a louça', pending: false },
-        {name: 'Comprar blusa', pending: true},
+      tasks: []
+    }
+  },
 
-      ]
+  watch: {
+    tasks: {
+      deep: true,
+      handler() {
+        localStorage.setItem('tasks', JSON.stringify(this.tasks))
+      }
     }
   },
 
@@ -43,6 +48,17 @@ export default {
 
     toggleTaskState(i) {
       this.tasks[i].pending = !this.tasks[i].pending
+    }
+  },
+
+  created() {
+    const json = localStorage.getItem('tasks')
+    const array = JSON.parse(json)
+    if (Array.isArray(array)) {
+      this.tasks = array
+      
+    }else{
+      this.tasks = []
     }
   }
 }
