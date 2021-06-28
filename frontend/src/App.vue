@@ -2,6 +2,7 @@
 	<div id="app">
 		<h1>My TODO List</h1>
     <NewTask @taskAdded="addTask"/>
+    <button class="button button2">Finalizar todos</button>
     <TaskGrid :tasks="tasks" 
       @taskDeleted="deleteTask"
       @taskStateChanged="toggleTaskState" />
@@ -85,4 +86,30 @@ export default {
 		font-weight: 300;
 		font-size: 3rem;
 	}
+
+  .button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
 </style>
