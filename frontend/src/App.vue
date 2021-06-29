@@ -34,6 +34,8 @@ export default {
   methods: {
     addTask(task) {
       const sameName = t => t.name === task.name
+      // eslint-disable-next-line no-console
+      console.log(task)
       const reallyNew = this.tasks.filter(sameName).length == 0
       if(reallyNew) {
         this.tasks.push({
