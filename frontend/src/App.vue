@@ -2,7 +2,7 @@
 	<div id="app">
 		<h1>My TODO List</h1>
     <NewTask @taskAdded="addTask"/>
-    <button class="button button2">Finalizar todos</button>
+    <button @click="doneAllTask" class="button button2">Finalizar todos</button>
     <TaskGrid :tasks="tasks" 
       @taskDeleted="deleteTask"
       @taskStateChanged="toggleTaskState" />
@@ -49,6 +49,12 @@ export default {
 
     toggleTaskState(i) {
       this.tasks[i].pending = !this.tasks[i].pending
+    },
+
+    doneAllTask() {
+      for (let i in this.tasks) {
+        this.tasks[i].pending = false;
+      }
     }
   },
 
