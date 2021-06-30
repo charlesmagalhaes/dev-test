@@ -23,7 +23,7 @@ export default {
 
     data() {
     return{
-      toogle : true,
+      toogle : false,
     }
   },
   computed: {
@@ -56,6 +56,7 @@ export default {
   }
 
   .pending {
+    color: #ddd;
     border-left: 12px solid #b73229;
     background-color: #F44336;
   }
