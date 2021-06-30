@@ -3,8 +3,8 @@
     @click="$emit('taskStateChanged', task)"
     class="task"
     :class="stateClass">
-    <span @click.stop="$emit('taskDeleted', task)" class="close">x</span>
-    <span v-on:click.stop="toogle = !toogle" class="change">c</span>
+    <span @click.stop="$emit('taskDeleted', task)" class="close"><i class="material-icons">delete_forever</i></span>
+    <span v-on:click.stop="toogle = !toogle" class="change"><i class="material-icons">edit</i></span>
     <p>{{task.name}}</p>
     <template v-if="toogle">
       <TaskChange />
@@ -80,9 +80,9 @@ export default {
     top: 10px;
     font-size: 0.9rem;
     font-weight: 600;
-    height: 20px;
-    width: 20px;
-    border-radius: 10px;
+    height: 25px;
+    width: 25px;
+    border-radius: 12px;
     display: flex;
     justify-content: center;
   }
@@ -100,9 +100,9 @@ export default {
     bottom: 10px;
     font-size: 0.9rem;
     font-weight: 600;
-    height: 20px;
-    width: 20px;
-    border-radius: 10px;
+    height: 25px;
+    width: 25px;
+    border-radius: 12px;
     display: flex;
     justify-content: center;
   }

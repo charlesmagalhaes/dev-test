@@ -1,4 +1,5 @@
 <template>
+  <di></di>
 </template>
 
 <script>
