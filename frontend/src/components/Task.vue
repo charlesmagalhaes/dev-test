@@ -1,4 +1,5 @@
 <template>
+  <div>
   <div 
     @click="$emit('taskStateChanged', task)"
     class="task"
@@ -6,9 +7,10 @@
     <span @click.stop="$emit('taskDeleted', task)" class="close"><i class="material-icons">delete_forever</i></span>
     <span v-on:click.stop="toogle = !toogle" class="change"><i class="material-icons">edit</i></span>
     <p>{{task.name}}</p>
-    <template v-if="toogle">
-      <TaskChange />
-    </template>
+   </div>
+  <div v-if="toogle">
+    <task-change></task-change>
+  </div>
   </div>
 </template>
 
@@ -105,6 +107,11 @@ export default {
     width: 25px;
     border-radius: 12px;
     display: flex;
+    justify-content: center;
+  }
+
+  .inputcss {
+    align-items: center;
     justify-content: center;
   }
 

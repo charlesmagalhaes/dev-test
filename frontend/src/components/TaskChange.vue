@@ -1,5 +1,9 @@
 <template>
-  <di></di>
+  <div class="changeCss">
+    <input v-model="name" @keydown.enter="add" type="text"
+           class="form-element" placeholder="alterar">
+    <button class="form-element" @click="add"><i class="material-icons">edit</i></button>
+  </div>
 </template>
 
 <script>
@@ -10,20 +14,31 @@ export default {
 
 <style scoped>
 .changeCss {
-  width: 500px;
-  background: #AAAAAA;
+  margin: 35px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
-.modal-mask {
-  position: fixed;
-  z-index: 9998;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: table;
-  transition: opacity 0.3s ease;
+.form-element {
+  outline: none;
+  font-size: 2rem;
+  border: 1px solid#FFF;
+  padding: 5px 10px 8px;
+  color: #FFF;
+}
+
+input.form-element {
+  width: 500px;
+  background: #FFF2;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+button.form-element {
+  border-left: none;
+  background-color: #2196F3;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 </style>
