@@ -25,6 +25,8 @@ export default {
 .task-grid {
   margin: 100px;
   padding: 10px;
+  margin-top: 40px;
+  align-items: center;
 }
 
 .no-task {

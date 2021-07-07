@@ -15,6 +15,8 @@ export default {
 <style scoped>
 .changeCss {
   margin: 35px;
+  width: 600px;
+  margin-top: 0px;
   align-items: center;
   justify-content: center;
   align-content: center;

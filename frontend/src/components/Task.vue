@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="teste">
   <div 
     @click="$emit('taskStateChanged', task)"
     class="task"
@@ -75,6 +75,11 @@ export default {
   }
   .done .close {
     background-color: #0A8F08;
+  }
+
+  .teste {
+    align-items: center;
+    align-content: center;
   }
 
   .close {
