@@ -1,5 +1,5 @@
 {
-  "nextId": 7,
+  "nextId": 11,
   "tasks": [
     {
       "id": 1,
@@ -8,28 +8,33 @@
     },
     {
       "id": 2,
-      "description": "Fazer compras",
-      "pending": "true"
+      "description": "Fazer compras no BH",
+      "pending": "false"
     },
     {
       "id": 3,
-      "description": "Buscar pacote na sexta",
+      "description": "Buscar pacote na sexta-feira",
       "pending": "true"
     },
     {
-      "id": 4,
-      "description": "Fazer Elíptico",
+      "id": 7,
+      "description": "ligar para love",
       "pending": "true"
     },
     {
-      "id": 5,
-      "description": "Fazer Elíptico",
+      "id": 8,
+      "description": "Fazer trabalho",
       "pending": "true"
     },
     {
-      "id": 6,
-      "description": "Fazer Elíptico",
+      "id": 9,
+      "description": "Fazer trabalho",
       "pending": "true"
+    },
+    {
+      "id": 10,
+      "description": "Fazer Compras",
+      "pending": false
     }
   ]
 }
