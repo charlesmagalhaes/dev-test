@@ -1,14 +1,26 @@
 <template>
   <div class="changeCss">
-    <input v-model="name" @keydown.enter="add" type="text"
+    <input v-model="task.name" @keydown.enter="edit" type="text"
            class="form-element" placeholder="alterar">
-    <button class="form-element" @click="add"><i class="material-icons">edit</i></button>
+    <button class="form-element" @click="edit"><i class="material-icons">edit</i></button>
   </div>
 </template>
 
 <script>
 export default {
-  name: "TaskChange"
+  props: ['task'],
+  data() {
+    return {
+      pending: ''
+    }
+  },
+  methods: {
+    edit() {
+      // eslint-disable-next-line no-console
+      console.log('clicou')
+    }
+  }
+
 }
 </script>
 
