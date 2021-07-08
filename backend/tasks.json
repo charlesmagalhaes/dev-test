@@ -1,14 +1,14 @@
 {
-  "nextId": 11,
+  "nextId": 18,
   "tasks": [
     {
       "id": 1,
-      "description": "Estudar",
-      "pending": "true"
+      "description": "Fazer Compras",
+      "pending": false
     },
     {
       "id": 2,
-      "description": "Fazer compras no BH",
+      "description": "Fazer compras no BH blue ...",
       "pending": "false"
     },
     {
@@ -32,8 +32,23 @@
       "pending": "true"
     },
     {
-      "id": 10,
-      "description": "Fazer Compras",
+      "id": 14,
+      "description": "Assistir Seleção brasileira",
+      "pending": false
+    },
+    {
+      "id": 15,
+      "description": "Fazer Trabalho prático hoje",
+      "pending": false
+    },
+    {
+      "id": 16,
+      "description": "Ver notas",
+      "pending": false
+    },
+    {
+      "id": 17,
+      "description": "Ir na casa da love",
       "pending": false
     }
   ]

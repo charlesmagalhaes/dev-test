@@ -8,14 +8,14 @@ export const swaggerDocument = {
   host: 'localhost:3000',
   tags: [
     {
-      name: 'Task',
+      name: 'task',
       description: 'Task management',
     },
   ],
   paths: {
     '/task': {
       get: {
-        tags: ['Task'],
+        tags: ['task'],
         summary: 'Get existing tasks',
         description: 'Get existing tasks',
         produces: ['application/json'],
@@ -25,7 +25,7 @@ export const swaggerDocument = {
             schema: {
               type: 'array',
               items: {
-                $ref: '#/definitions/Account',
+                $ref: '#/definitions/Task',
               },
             },
           },
@@ -35,7 +35,7 @@ export const swaggerDocument = {
         },
       },
       post: {
-        tags: ['Task'],
+        tags: ['task'],
         summary: 'Create a new task',
         description: 'Crea a new task with the received parameters',
         consumes: ['application/json'],
@@ -52,10 +52,73 @@ export const swaggerDocument = {
         ],
         responses: {
           200: {
-            description: 'Account object',
+            description: 'Task object',
           },
           400: {
             description: 'Error created',
+          },
+        },
+      },
+      put: {
+        tags: ['task'],
+        summary: 'Update an existing task',
+        description: '',
+        operationId: 'updateTask',
+        consumes: ['application/json'],
+        produces: ['application/xml'],
+        parameters: [
+          {
+            in: 'body',
+            name: 'body',
+            description: 'Task object that needs to be added to the store',
+            required: true,
+            schema: {
+              $ref: '#/definitions/Task_',
+            },
+          },
+        ],
+        responses: {
+          400: {
+            description: 'Invalid ID supplied',
+          },
+          404: {
+            description: 'Task not found',
+          },
+          405: {
+            description: 'Validation exception',
+          },
+        },
+      },
+    },
+    '/task/{taskId}': {
+      delete: {
+        tags: ['task'],
+        summary: 'Deletes a task',
+        description: '',
+        operationId: 'deleteTask',
+        produces: ['application/json'],
+        parameters: [
+          {
+            name: 'api_key',
+            in: 'header',
+            required: false,
+            type: 'string',
+          },
+          {
+            name: 'taskId',
+            in: 'path',
+            description: 'Task id to delete',
+            required: true,
+            type: 'integer',
+            format: 'int64',
+          },
+        ],
+        responses: {
+          400: {
+            description: 'Invalid ID supplied',
+          },
+          404: {
+            description: 'Task not found',
           },
         },
       },
@@ -72,6 +135,38 @@ export const swaggerDocument = {
         pending: {
           type: 'boolean',
           example: 'false',
+        },
+      },
+      xml: {
+        name: 'Order',
+      },
+    },
+    Task_: {
+      type: 'object',
+      properties: {
+        id: {
+          type: 'integer',
+          example: '',
+        },
+        description: {
+          type: 'string',
+          example: 'Fazer Compras',
+        },
+        pending: {
+          type: 'boolean',
+          example: 'false',
+        },
+      },
+      xml: {
+        name: 'Order',
+      },
+    },
+    TaskId: {
+      type: 'object',
+      properties: {
+        description: {
+          type: 'number',
+          example: '10',
         },
       },
       xml: {
