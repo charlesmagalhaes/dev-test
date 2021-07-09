@@ -1,14 +1,9 @@
 {
-  "nextId": 18,
+  "nextId": 20,
   "tasks": [
     {
-      "id": 1,
-      "description": "Fazer Compras",
-      "pending": false
-    },
-    {
       "id": 2,
-      "description": "Fazer compras no BH blue ...",
+      "description": "Love love love",
       "pending": "false"
     },
     {
@@ -50,6 +45,11 @@
       "id": 17,
       "description": "Ir na casa da love",
       "pending": false
+    },
+    {
+      "id": 19,
+      "description": "Verificar notas lançadas",
+      "pending": "true"
     }
   ]
 }
