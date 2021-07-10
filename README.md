@@ -34,7 +34,7 @@
 1. npm run serve
 
 
-## Como "startar" a aplicação frontend
+## Como "startar" a aplicação backend
 
 1. Clonar o projeto no diretório de sua preferência;
 1. Abrir o Visual Studio Code e importar a aplicação;
