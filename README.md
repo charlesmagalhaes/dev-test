@@ -24,6 +24,7 @@
 ### Aplicativo desenvolvido para criar uma lista de tarefas
 
 - Pode efetuar inclusão, alteração e exclusão.
+- Os dados estão sendo persistidos no Local Storage 
 
 
 ## Como "startar" a aplicação frontend
