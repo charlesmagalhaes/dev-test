@@ -25,7 +25,7 @@
 ### Aplicativo desenvolvido para criar uma lista de tarefas
 
 - Pode efetuar inclusão, alteração e exclusão.
-- Os dados estão sendo persistidos no Local Storage, mais foi criado também uma api que estão independentes.
+- Os dados do frontend estão sendo persistidos no Local Storage, mais foi criado também uma api que por enquanto não está conversando com o frontend, trabalham independentes.
 
 
 ## Como "startar" a aplicação frontend
