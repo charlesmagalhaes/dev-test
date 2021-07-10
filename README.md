@@ -17,9 +17,10 @@
 ## Tecnologia envolvida - Backend
 
 1. Visual Studio Code 1.54.1;
-1. JavaScript;
-1. ExpressJs;
-1. File System para ler e escrever no arquivo Json;
+2. JavaScript;
+3. ExpressJs;
+4. File System para ler e escrever no arquivo Json;
+5. Insomnia - para testar a API;
 
 
 ### Aplicativo desenvolvido para criar uma lista de tarefas
