@@ -6,6 +6,7 @@
 
 ![image](https://user-images.githubusercontent.com/67280323/125173153-22c9ec00-e194-11eb-8150-8c57c1f61cff.png)
 
+![image](https://user-images.githubusercontent.com/67280323/125174042-f5337180-e198-11eb-968a-d2f3e4720530.png)
 
 ## Tecnologia envolvida - Frontend
 
