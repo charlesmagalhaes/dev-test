@@ -1,11 +1,11 @@
 # Teste de Desenvolvimento - Frontend e Backend
 
-- Projeto proposto na disciplina Gestão e Qualidade de software pela C&T em uma parceria com o Centro Universitário Una.
+- Projeto proposto pela C&T em uma parceria com o Centro Universitário Una na disciplina Gestão e Qualidade de software.
 
 ## Aplicativo desenvolvido para criar uma lista de tarefas
 
 - Pode efetuar inclusão, alteração e exclusão.
-- Os dados do frontend estão sendo persistidos no Local Storage, mais foi criado também uma api que por enquanto não está conversando com o frontend, trabalham independentes.
+- Os dados do frontend estão sendo persistidos no Local Storage. Foi criado também uma api que, por enquanto, não está conversando com o frontend.
 
 ## Meu Todo List App
 
