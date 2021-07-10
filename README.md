@@ -4,6 +4,9 @@
 
 ## Meu Todo List App
 
+![image](https://user-images.githubusercontent.com/67280323/125173153-22c9ec00-e194-11eb-8150-8c57c1f61cff.png)
+
+
 ## Tecnologia envolvida - Frontend
 
 1. Visual Studio Code 1.54.1;
