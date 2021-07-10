@@ -2,6 +2,11 @@
 
 - Projeto proposto na disciplina Gestão e Qualidade de software pela C&T em uma parceria com o Centro Universitário Una.
 
+## Aplicativo desenvolvido para criar uma lista de tarefas
+
+- Pode efetuar inclusão, alteração e exclusão.
+- Os dados do frontend estão sendo persistidos no Local Storage, mais foi criado também uma api que por enquanto não está conversando com o frontend, trabalham independentes.
+
 ## Meu Todo List App
 
 ![image](https://user-images.githubusercontent.com/67280323/125173153-22c9ec00-e194-11eb-8150-8c57c1f61cff.png)
@@ -21,13 +26,6 @@
 3. ExpressJs;
 4. File System para ler e escrever no arquivo Json;
 5. Insomnia - para testar a API;
-
-
-### Aplicativo desenvolvido para criar uma lista de tarefas
-
-- Pode efetuar inclusão, alteração e exclusão.
-- Os dados do frontend estão sendo persistidos no Local Storage, mais foi criado também uma api que por enquanto não está conversando com o frontend, trabalham independentes.
-
 
 ## Como "startar" a aplicação frontend
 
