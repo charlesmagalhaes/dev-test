@@ -9,7 +9,10 @@
     <p>{{task.name}}</p>
    </div>
   <div v-if="toogle">
-    <task-change :task='task'></task-change>
+    <task-change 
+    :task='task'
+    @taskChange="changeTask"
+    ></task-change>
   </div>
   </div>
 </template>

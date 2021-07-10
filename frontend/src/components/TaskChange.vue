@@ -1,6 +1,6 @@
 <template>
   <div class="changeCss">
-    <input v-model="task.name" @keydown.enter="edit" type="text"
+    <input v-model="this.name" @keydown.enter="edit" type="text"
            class="form-element" placeholder="alterar">
     <button class="form-element" @click="edit"><i class="material-icons">edit</i></button>
   </div>
@@ -11,13 +11,14 @@ export default {
   props: ['task'],
   data() {
     return {
+      name: this.task.name,
       pending: ''
     }
   },
   methods: {
     edit() {
-      // eslint-disable-next-line no-console
-      console.log('clicou')
+      this.$emit('taskChange', { name: this.name})
+      this.name = ''
     }
   }
 
