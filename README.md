@@ -26,6 +26,7 @@
 3. ExpressJs;
 4. File System para ler e escrever no arquivo Json;
 5. Insomnia - para testar a API;
+6. Swagger
 
 ## Como "startar" a aplicação frontend
 
