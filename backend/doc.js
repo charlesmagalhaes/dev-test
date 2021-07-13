@@ -146,7 +146,7 @@ export const swaggerDocument = {
       properties: {
         id: {
           type: 'integer',
-          example: '',
+          example: 3,
         },
         description: {
           type: 'string',

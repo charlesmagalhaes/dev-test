@@ -1,15 +1,10 @@
 {
-  "nextId": 20,
+  "nextId": 22,
   "tasks": [
     {
-      "id": 2,
-      "description": "Love love love",
-      "pending": "false"
-    },
-    {
       "id": 3,
-      "description": "Buscar pacote na sexta-feira",
-      "pending": "true"
+      "description": "Love Love",
+      "pending": false
     },
     {
       "id": 7,
@@ -50,6 +45,16 @@
       "id": 19,
       "description": "Verificar notas lançadas",
       "pending": "true"
+    },
+    {
+      "id": 20,
+      "description": "Estudar sobre docker",
+      "pending": "true"
+    },
+    {
+      "id": 21,
+      "description": "Subir aplicação no heroku",
+      "pending": false
     }
   ]
 }
