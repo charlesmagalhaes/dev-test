@@ -17,8 +17,9 @@ export default {
   },
   methods: {
     edit() {
-      this.$emit('taskChange', { name: this.name})
-      this.name = ''
+      /*this.$emit('taskChange', { name: this.name})
+      this.name = ''*/
+      this.$emit('fecharInput', false)
     }
   }
 

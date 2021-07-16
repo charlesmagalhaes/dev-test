@@ -11,7 +11,7 @@
   <div v-if="toogle">
     <task-change 
     :task='task'
-    @taskChange="changeTask"
+    @fecharInput="fecharInput"
     ></task-change>
   </div>
   </div>
@@ -37,6 +37,12 @@ export default {
         pending: this.task.pending,
         done: !this.task.pending
       }
+    }
+  },
+
+  methods: {
+    fecharInput(event) {
+      this.toogle = event.value
     }
   }
 }
