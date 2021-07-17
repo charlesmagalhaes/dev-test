@@ -5,7 +5,8 @@
     <button @click="doneAllTask" class="button button2">Finalizar todos</button>
     <TaskGrid :tasks="tasks" 
       @taskDeleted="deleteTask"
-      @taskStateChanged="toggleTaskState" />
+      @taskStateChanged="toggleTaskState"
+      @updateTask="updateTaskNow($event)" />
       
 	</div>
 </template>
@@ -35,13 +36,20 @@ export default {
     addTask(task) {
       const sameName = t => t.name === task.name
       // eslint-disable-next-line no-console
-      console.log(task)
       const reallyNew = this.tasks.filter(sameName).length == 0
       if(reallyNew) {
         this.tasks.push({
           name: task.name,
           pending: task.pending || true,
         })
+      }
+    },
+
+    updateTaskNow(task) {
+      for (let i in this.tasks) {
+        if (this.tasks[i].name == task.nameCurrent ){
+          this.tasks[i].name = task.nameNew
+        }
       }
     },
 

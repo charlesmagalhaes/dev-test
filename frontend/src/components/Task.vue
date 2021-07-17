@@ -12,6 +12,7 @@
     <task-change 
     :task='task'
     @fecharInput="fecharInput"
+    @updateTask="$emit('updateTask', $event)"
     ></task-change>
   </div>
   </div>
@@ -43,6 +44,11 @@ export default {
   methods: {
     fecharInput(event) {
       this.toogle = event.value
+    },
+
+    updatedTask(event) {
+      /* eslint-disable */
+      console.log(event);
     }
   }
 }
