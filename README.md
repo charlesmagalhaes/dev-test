@@ -33,19 +33,18 @@
 6. Swagger
 
 ## Como "startar" a aplicação frontend
-~~~~
+
 1. Clonar o projeto no diretório de sua preferência;
-~~~~
-1. Abrir o Visual Studio Code e importar a aplicação;
-1. npm install
-1. npm run serve
+2. Abrir o Visual Studio Code e importar a aplicação;
+3. npm install
+4. npm run serve
 
 
 ## Como "startar" a aplicação backend
 
 1. Clonar o projeto no diretório de sua preferência;
-1. Abrir o Visual Studio Code e importar a aplicação;
-1. npm i
-1. nodemon index.js
+2. Abrir o Visual Studio Code e importar a aplicação;
+3. npm i
+4. nodemon index.js
 
 
