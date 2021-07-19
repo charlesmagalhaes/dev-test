@@ -16,6 +16,7 @@
 ![image](https://user-images.githubusercontent.com/67280323/125174042-f5337180-e198-11eb-968a-d2f3e4720530.png)
 
 ## Tecnologia envolvida - Frontend
+- Necessário realizar a instalação do Docker e Docker-Compose.
 
 1. Visual Studio Code 1.54.1;
 2. JavaScript;
