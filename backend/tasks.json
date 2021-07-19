@@ -1,5 +1,5 @@
 {
-  "nextId": 22,
+  "nextId": 23,
   "tasks": [
     {
       "id": 3,
@@ -54,6 +54,11 @@
     {
       "id": 21,
       "description": "Subir aplicação no heroku",
+      "pending": false
+    },
+    {
+      "id": 22,
+      "description": "Fazer Compras",
       "pending": false
     }
   ]
