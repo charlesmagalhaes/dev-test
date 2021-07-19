@@ -16,8 +16,9 @@
 ## Tecnologia envolvida - Frontend
 
 1. Visual Studio Code 1.54.1;
-1. JavaScript;
-1. VueJS;
+2. JavaScript;
+3. VueJS;
+4. Docker. 
 
 ## Tecnologia envolvida - Backend
 
