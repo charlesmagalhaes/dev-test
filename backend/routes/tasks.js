@@ -1,6 +1,5 @@
-import express, { json } from 'express';
+import express from 'express';
 import { promises as fs } from 'fs';
-import { parse } from 'path';
 const router = express.Router();
 
 const { readFile, writeFile } = fs;

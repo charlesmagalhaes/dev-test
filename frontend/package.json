@@ -3,14 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "serve": "NODE_OPTIONS=--openssl-legacy-provider vue-cli-service serve",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "materialize-css": "^1.0.0-rc.2",
-    "bootstrap-icons": "^1.5.0",
-    "vue": "^2.5.17"
+    "bootstrap-icons": "^1.11.3",
+    "materialize-css": "^1.0.0",
+    "vue": "^2.7.16"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.2.0",
@@ -19,7 +19,7 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0-0",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.7.16"
   },
   "eslintConfig": {
     "root": true,
