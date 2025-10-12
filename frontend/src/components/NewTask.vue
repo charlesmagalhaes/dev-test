@@ -90,7 +90,7 @@ button.form-element {
 @media (max-width: 768px) {
   button.form-element {
     min-width: 45px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
