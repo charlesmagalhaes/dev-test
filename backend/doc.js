@@ -5,7 +5,6 @@ export const swaggerDocument = {
     version: '1.0.0',
     title: 'My Todo List',
   },
-  host: 'localhost:3000',
   tags: [
     {
       name: 'task',
