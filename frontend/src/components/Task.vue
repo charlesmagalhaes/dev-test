@@ -58,18 +58,47 @@ export default {
   .task {
     position: relative;
     box-sizing: border-box;
-    width: 1000px;
-    height: 80px;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    min-height: 80px;
     padding: 10px;
     border-radius: 8px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 300;
     cursor: pointer;
     user-select: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin: 20px auto;
+    word-wrap: break-word;
+  }
+
+  /* Mobile styles */
+  @media (max-width: 768px) {
+    .task {
+      font-size: 1rem;
+      padding: 10px 50px 10px 20px;
+      margin: 10px;
+      min-height: 60px;
+    }
+  }
+
+  /* Tablet styles */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .task {
+      font-size: 1.3rem;
+      max-width: 700px;
+      margin: 15px auto;
+    }
+  }
+
+  /* Desktop styles */
+  @media (min-width: 1025px) {
+    .task {
+      font-size: 2rem;
+    }
   }
 
   .pending {
@@ -108,6 +137,16 @@ export default {
     border-radius: 12px;
     display: flex;
     justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    .close {
+      height: 30px;
+      width: 30px;
+      right: 5px;
+      top: 5px;
+    }
   }
 
   .pending .change {
@@ -128,6 +167,16 @@ export default {
     border-radius: 12px;
     display: flex;
     justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    .change {
+      height: 30px;
+      width: 30px;
+      right: 5px;
+      bottom: 5px;
+    }
   }
 
   .inputcss {
