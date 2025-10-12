@@ -36,7 +36,7 @@ export default {
     addTask(task) {
       const sameName = t => t.name === task.name
       // eslint-disable-next-line no-console
-      const reallyNew = this.tasks.filter(sameName).length == 0
+      const reallyNew = this.tasks.filter(sameName).length === 0
       if(reallyNew) {
         this.tasks.push({
           name: task.name,
@@ -47,7 +47,7 @@ export default {
 
     updateTaskNow(task) {
       for (let i in this.tasks) {
-        if (this.tasks[i].name == task.nameCurrent ){
+        if (this.tasks[i].name === task.nameCurrent ){
           this.tasks[i].name = task.nameNew
         }
       }
