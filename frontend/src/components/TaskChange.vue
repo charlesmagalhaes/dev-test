@@ -30,11 +30,30 @@ export default {
 <style scoped>
 .changeCss {
   margin: 35px;
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
   align-items: center;
   justify-content: center;
-  align-content: center;
+}
+
+@media (max-width: 768px) {
+  .changeCss {
+    margin: 20px 10px;
+    margin-top: 0px;
+    width: calc(100% - 20px);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .changeCss {
+    margin: 30px auto;
+    margin-top: 0px;
+    max-width: 500px;
+  }
 }
 
 .form-element {
@@ -45,17 +64,39 @@ export default {
   color: #FFF;
 }
 
+@media (max-width: 768px) {
+  .form-element {
+    font-size: 1.2rem;
+    padding: 5px 8px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .form-element {
+    font-size: 1.5rem;
+  }
+}
+
 input.form-element {
-  width: 500px;
+  width: 100%;
+  flex: 1;
   background: #FFF2;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 }
+
 button.form-element {
   border-left: none;
   background-color: #2196F3;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
+  min-width: 50px;
+}
+
+@media (max-width: 768px) {
+  button.form-element {
+    min-width: 45px;
+  }
 }
 
 </style>

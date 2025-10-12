@@ -27,6 +27,27 @@ export default {
 <style scoped>
 .new-task {
   margin: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .new-task {
+    margin: 20px 10px;
+    width: calc(100% - 20px);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .new-task {
+    margin: 30px auto;
+    max-width: 500px;
+  }
 }
 
 .form-element {
@@ -37,17 +58,40 @@ export default {
   color: #FFF;
 }
 
+@media (max-width: 768px) {
+  .form-element {
+    font-size: 1.2rem;
+    padding: 5px 8px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .form-element {
+    font-size: 1.5rem;
+  }
+}
+
 input.form-element {
-  width: 500px;
+  width: 100%;
+  flex: 1;
   background: #FFF2;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 }
+
 button.form-element {
   border-left: none;
   background-color: #2196F3;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
+  min-width: 50px;
+}
+
+@media (max-width: 768px) {
+  button.form-element {
+    min-width: 45px;
+    font-size: 1.2rem;
+  }
 }
 
 </style>

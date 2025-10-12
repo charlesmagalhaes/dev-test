@@ -86,6 +86,9 @@ export default {
 		font-family: 'Lato', sans-serif;
 		background: linear-gradient(to right, rgb(22, 34, 42), rgb(58, 96, 115));
 		color: #FFF;
+		margin: 0;
+		padding: 0;
+		min-height: 100vh;
 	}
 
 	#app {
@@ -95,12 +98,32 @@ export default {
 		justify-content: center;
 		align-items: center;
 		height: auto;
+		padding: 20px 10px;
+		box-sizing: border-box;
 	}
 
 	#app h1 {
 		margin-bottom: 5px;
 		font-weight: 300;
 		font-size: 3rem;
+		text-align: center;
+	}
+
+	@media (max-width: 768px) {
+		#app {
+			padding: 10px 5px;
+		}
+
+		#app h1 {
+			font-size: 1.8rem;
+			margin-bottom: 10px;
+		}
+	}
+
+	@media (min-width: 769px) and (max-width: 1024px) {
+		#app h1 {
+			font-size: 2.5rem;
+		}
 	}
 
   .button {
@@ -116,6 +139,13 @@ export default {
   transition-duration: 0.4s;
   cursor: pointer;
   border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .button {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
 }
 
 .button2 {

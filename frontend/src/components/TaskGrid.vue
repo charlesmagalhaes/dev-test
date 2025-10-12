@@ -28,11 +28,40 @@ export default {
   padding: 10px;
   margin-top: 40px;
   align-items: center;
+  width: 100%;
+  max-width: 1000px;
+}
+
+@media (max-width: 768px) {
+  .task-grid {
+    margin: 20px 10px;
+    margin-top: 20px;
+    padding: 5px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .task-grid {
+    margin: 50px 30px;
+    margin-top: 30px;
+  }
 }
 
 .no-task {
   color: #AAA;
   font-size: 1.7rem;
+}
+
+@media (max-width: 768px) {
+  .no-task {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .no-task {
+    font-size: 1.4rem;
+  }
 }
 
 </style>
