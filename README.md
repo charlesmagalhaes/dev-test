@@ -1,15 +1,12 @@
 # Teste de Desenvolvimento - Frontend e Backend
 
-- Projeto proposto pela C&T em uma parceria com o Centro Universitário Una na disciplina Gestão e Qualidade de software.
-
 ## Aplicativo desenvolvido para criar uma lista de tarefas
 
 - Pode efetuar inclusão, alteração e exclusão.
 - Os dados do frontend estão sendo persistidos no Local Storage. Foi criado também uma api que, por enquanto, não está conversando com o frontend.
 
 ## Meu Todo List App
-- link heroku frontend - https://front-my-todo-list.herokuapp.com/
-- link heroku backend - https://app-my-todo-list.herokuapp.com/doc/
+- https://dev-test-flame.vercel.app/
 
 ![image](https://user-images.githubusercontent.com/67280323/125173153-22c9ec00-e194-11eb-8150-8c57c1f61cff.png)
 
