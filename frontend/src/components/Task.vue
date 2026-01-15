@@ -58,9 +58,10 @@ export default {
   .task {
     position: relative;
     box-sizing: border-box;
-    width: 1000px;
-    height: 80px;
-    padding: 10px;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 80px;
+    padding: 10px 50px 10px 10px;
     border-radius: 8px;
     font-size: 2rem;
     font-weight: 300;
@@ -69,7 +70,8 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin: 20px auto;
+    word-wrap: break-word;
   }
 
   .pending {
@@ -86,7 +88,7 @@ export default {
   }
 
   .pending .close {
-    background-color: #b73229 ;
+    background-color: #b73229;
   }
   .done .close {
     background-color: #0A8F08;
@@ -95,6 +97,8 @@ export default {
   .teste {
     align-items: center;
     align-content: center;
+    width: 100%;
+    max-width: 1000px;
   }
 
   .close {
@@ -108,10 +112,11 @@ export default {
     border-radius: 12px;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   .pending .change {
-    background-color: #b73229 ;
+    background-color: #b73229;
   }
   .done .change {
     background-color: #0A8F08;
@@ -128,11 +133,75 @@ export default {
     border-radius: 12px;
     display: flex;
     justify-content: center;
-  }
-
-  .inputcss {
     align-items: center;
-    justify-content: center;
   }
 
+  .task p {
+    margin: 0;
+    padding: 5px;
+    word-break: break-word;
+  }
+
+  /* Mobile devices (up to 767px) */
+  @media screen and (max-width: 767px) {
+    .task {
+      font-size: 1.2rem;
+      min-height: 60px;
+      padding: 10px 45px 10px 10px;
+      margin: 15px 10px;
+      border-left-width: 8px;
+    }
+
+    .close, .change {
+      height: 22px;
+      width: 22px;
+      font-size: 0.8rem;
+    }
+
+    .close {
+      right: 8px;
+      top: 8px;
+    }
+
+    .change {
+      right: 8px;
+      bottom: 8px;
+    }
+  }
+
+  /* Tablet devices (768px to 1024px) */
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .task {
+      font-size: 1.5rem;
+      min-height: 70px;
+      padding: 10px 48px 10px 10px;
+      margin: 18px 15px;
+      border-left-width: 10px;
+    }
+
+    .close, .change {
+      height: 24px;
+      width: 24px;
+      font-size: 0.85rem;
+    }
+
+    .close {
+      right: 9px;
+      top: 9px;
+    }
+
+    .change {
+      right: 9px;
+      bottom: 9px;
+    }
+  }
+
+  /* Desktop devices (1025px and above) */
+  @media screen and (min-width: 1025px) {
+    .task {
+      font-size: 2rem;
+      min-height: 80px;
+      margin: 20px;
+    }
+  }
 </style>

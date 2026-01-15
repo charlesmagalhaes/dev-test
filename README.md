@@ -4,6 +4,7 @@
 
 - Pode efetuar inclusão, alteração e exclusão.
 - Os dados do frontend estão sendo persistidos no Local Storage. Foi criado também uma api que, por enquanto, não está conversando com o frontend.
+- **Design Responsivo**: Interface adaptável para dispositivos móveis, tablets e desktops.
 
 ## Meu Todo List App
 - https://dev-test-flame.vercel.app/
@@ -18,7 +19,8 @@
 1. Visual Studio Code 1.54.1;
 2. JavaScript;
 3. VueJS;
-4. Docker. 
+4. Docker;
+5. CSS3 com Media Queries para design responsivo.
 
 ## Tecnologia envolvida - Backend
 
@@ -28,6 +30,22 @@
 4. File System para ler e escrever no arquivo Json;
 5. Insomnia - para testar a API;
 6. Swagger
+
+## Design Responsivo
+
+A aplicação foi desenvolvida com design responsivo para garantir uma ótima experiência em diferentes dispositivos:
+
+### Breakpoints:
+- **Mobile**: até 767px - Interface otimizada para celulares
+- **Tablet**: 768px a 1024px - Layout adaptado para tablets
+- **Desktop**: acima de 1024px - Experiência completa para desktops
+
+### Características Responsivas:
+- Tamanhos de fonte ajustáveis conforme o dispositivo
+- Larguras flexíveis e máximas definidas para elementos
+- Espaçamentos proporcionais ao tamanho da tela
+- Botões e inputs adaptáveis
+- Layout fluido que se ajusta automaticamente
 
 ## Como "startar" a aplicação frontend
 
