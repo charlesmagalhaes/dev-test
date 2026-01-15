@@ -136,35 +136,35 @@ export default {
 
   /* Mobile devices (up to 767px) */
   @media screen and (max-width: 767px) {
-	#app h1 {
-	  font-size: 2rem;
-	  margin-bottom: 10px;
-	}
+    #app h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
 
-	.button {
-	  padding: 12px 24px;
-	  font-size: 14px;
-	  width: 100%;
-	  max-width: 300px;
-	}
+    .button {
+      padding: 12px 24px;
+      font-size: 14px;
+      width: 100%;
+      max-width: 300px;
+    }
   }
 
   /* Tablet devices (768px to 1024px) */
   @media screen and (min-width: 768px) and (max-width: 1024px) {
-	#app h1 {
-	  font-size: 2.5rem;
-	}
+    #app h1 {
+      font-size: 2.5rem;
+    }
 
-	.button {
-	  padding: 14px 28px;
-	  font-size: 15px;
-	}
+    .button {
+      padding: 14px 28px;
+      font-size: 15px;
+    }
   }
 
   /* Desktop devices (1025px and above) */
   @media screen and (min-width: 1025px) {
-	#app h1 {
-	  font-size: 3rem;
-	}
+    #app h1 {
+      font-size: 3rem;
+    }
   }
 </style>
